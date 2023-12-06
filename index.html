@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Order a Smoothiegram!</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Order a Smoothiegram</h1>
+        <p class="lead">
+          There's no better way to show a loved one you care than with a
+          Smoothiegram!
+        </p>
+        <p>
+          Each Smoothiegram comes with a custom message printed on high-quality
+          cardstock and your choice of a premium, hand-crafted smoothie.
+        </p>
+      </header>
+
+      <main>
+        <!-- Smoothie Menu -->
+        <section>
+          <h2>Smoothie Options</h2>
+          <p>Choose from one of these smoothies.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Flavor</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Super Strawberries Delicious</td>
+                <td class="price">$1,200.00</td>
+              </tr>
+              <tr>
+                <td>White Grape Ranger</td>
+                <td class="price">$400.00</td>
+              </tr>
+              <tr>
+                <td>Blueberry Blast</td>
+                <td class="price">$1,750.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Order Form -->
+        <section>
+          <h2>Order Form</h2>
+          <form action="">
+            <!-- Sender Input -->
+            <div class="form-group">
+              <label for="name-input">Your name</label>
+              <input id="name-input" name="sender" type="text" />
+            </div>
+
+            <!-- Recipient Input -->
+            <div class="form-group">
+              <label for="">Who are we sending this to?</label>
+              <input type="text" name="recipient" />
+            </div>
+
+            <!-- Choose Smoothie Dropdown -->
+            <div class="form-group">
+              <label for="">Choose a smoothie</label>
+              <select name="smoothie" id="">
+                <option value="">Please choose an option</option>
+                <option value="super strawberry delicious">
+                  Super Strawberry Delicious
+                </option>
+                <option value="what grape ranger">White Grape Ranger</option>
+                <option value="blueberry blast">Blueberry Blast</option>
+              </select>
+            </div>
+
+            <!-- Delivery Time Radio -->
+            <div class="form-group">
+              <span>When should we deliver?</span>
+              <input type="radio" name="delivery-time" value="asap" />
+              <label class="inline-label" for="">As soon as possible</label>
+              <input type="radio" name="delivery-time" value="am" />
+              <label class="inline-label" for="">Morning</label>
+              <input type="radio" name="delivery-time" value="mp" />
+              <label class="inline-label" for="">Afternoon</label>
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="form-group">
+              <label for="">Enter your message</label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- Subscribe Checkbox -->
+            <div>
+              <label class="inline-label" for=""
+                >Subscribe to our newsletter?</label
+              >
+              <input
+                type="checkbox"
+                name="subscribe"
+                value="yes"
+                checked="true"
+              />
+            </div>
+
+            <input type="submit" />
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
